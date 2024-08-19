@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+  <script defer src="js/slider.js"></script>
+  <title>Moth</title>
+</head>
+
+<body>
+  <nav id="nav" class="nav">
+    <div class="nav__decor"></div>
+    <div class="nav__top">
+      <div class="nav__logo">
+        <img src="./img/logo.svg" alt="" class="nav__logo-img">
+        <p class="nav__logo-text"><span class="nav__logo-span">.</span>moth</p>
+      </div>
+      <button id="nav-btn" class="nav__btn">
+        <img src="./img/direct.svg" alt="" class="nav__btn-icon">
+      </button>
+    </div>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="index.html" class="nav__link nav__link--active">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M21.6702 6.94978C21.0302 4.77978 19.2202 2.96978 17.0502 2.32978C15.4002 1.84978 14.2602 1.88978 13.4702 2.47978C12.5202 3.18978 12.4102 4.46978 12.4102 5.37978V7.86978C12.4102 10.3298 13.5302 11.5798 15.7302 11.5798H18.6002C19.5002 11.5798 20.7902 11.4698 21.5002 10.5198C22.1102 9.73978 22.1602 8.59978 21.6702 6.94978Z"
+              fill="#737373" />
+            <path
+              d="M18.9099 13.3598C18.6499 13.0598 18.2699 12.8898 17.8799 12.8898H14.2999C12.5399 12.8898 11.1099 11.4598 11.1099 9.69978V6.11978C11.1099 5.72978 10.9399 5.34978 10.6399 5.08978C10.3499 4.82978 9.9499 4.70978 9.5699 4.75978C7.2199 5.05978 5.0599 6.34978 3.6499 8.28978C2.2299 10.2398 1.7099 12.6198 2.1599 14.9998C2.8099 18.4398 5.5599 21.1898 9.0099 21.8398C9.5599 21.9498 10.1099 21.9998 10.6599 21.9998C12.4699 21.9998 14.2199 21.4398 15.7099 20.3498C17.6499 18.9398 18.9399 16.7798 19.2399 14.4298C19.2899 14.0398 19.1699 13.6498 18.9099 13.3598Z"
+              fill="#737373" />
+          </svg>
+          <span class="nav__link-span">Главная</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="listings.html" class="nav__link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.3201 3H5.0901C3.1001 3 2.1001 4.01 2.1001 6.02V22H7.5001V18.25C7.5001 17.84 7.8401 17.5 8.2501 17.5C8.6601 17.5 9.0001 17.83 9.0001 18.25V22H14.3001V6.02C14.3001 4.01 13.3101 3 11.3201 3ZM10.7501 12.75H5.8001C5.3901 12.75 5.0501 12.41 5.0501 12C5.0501 11.59 5.3901 11.25 5.8001 11.25H10.7501C11.1601 11.25 11.5001 11.59 11.5001 12C11.5001 12.41 11.1601 12.75 10.7501 12.75ZM10.7501 9H5.8001C5.3901 9 5.0501 8.66 5.0501 8.25C5.0501 7.84 5.3901 7.5 5.8001 7.5H10.7501C11.1601 7.5 11.5001 7.84 11.5001 8.25C11.5001 8.66 11.1601 9 10.7501 9Z"
+              fill="#737373" />
+            <path
+              d="M23 21.25H20.73V18.25C21.68 17.94 22.37 17.05 22.37 16V14C22.37 12.69 21.3 11.62 19.99 11.62C18.68 11.62 17.61 12.69 17.61 14V16C17.61 17.04 18.29 17.92 19.22 18.24V21.25H1C0.59 21.25 0.25 21.59 0.25 22C0.25 22.41 0.59 22.75 1 22.75H19.93C19.95 22.75 19.96 22.76 19.98 22.76C20 22.76 20.01 22.75 20.03 22.75H23C23.41 22.75 23.75 22.41 23.75 22C23.75 21.59 23.41 21.25 23 21.25Z"
+              fill="#737373" />
+          </svg>
+          <span class="nav__link-span">Новые объявления</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="room.html" class="nav__link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.91 10.7198H14.82V3.51978C14.82 1.83978 13.91 1.49978 12.8 2.75978L12 3.66978L5.23001 11.3698C4.30001 12.4198 4.69001 13.2798 6.09001 13.2798H9.18001V20.4798C9.18001 22.1598 10.09 22.4998 11.2 21.2398L12 20.3298L18.77 12.6298C19.7 11.5798 19.31 10.7198 17.91 10.7198Z"
+              fill="#737373" />
+          </svg>
+          <span class="nav__link-span">Рабочая комната</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.05 14.95L9.2 16.8C8.81 17.19 8.19 17.19 7.79 16.81C7.68 16.7 7.57 16.6 7.46 16.49C6.43 15.45 5.5 14.36 4.67 13.22C3.85 12.08 3.19 10.94 2.71 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C10.83 13.32 10.94 13.42 11.04 13.52C11.44 13.91 11.45 14.55 11.05 14.95Z"
+              fill="#737373" />
+            <path
+              d="M21.9701 18.33C21.9701 18.61 21.9201 18.9 21.8201 19.18C21.7901 19.26 21.7601 19.34 21.7201 19.42C21.5501 19.78 21.3301 20.12 21.0401 20.44C20.5501 20.98 20.0101 21.37 19.4001 21.62C19.3901 21.62 19.3801 21.63 19.3701 21.63C18.7801 21.87 18.1401 22 17.4501 22C16.4301 22 15.3401 21.76 14.1901 21.27C13.0401 20.78 11.8901 20.12 10.7501 19.29C10.3601 19 9.9701 18.71 9.6001 18.4L12.8701 15.13C13.1501 15.34 13.4001 15.5 13.6101 15.61C13.6601 15.63 13.7201 15.66 13.7901 15.69C13.8701 15.72 13.9501 15.73 14.0401 15.73C14.2101 15.73 14.3401 15.67 14.4501 15.56L15.2101 14.81C15.4601 14.56 15.7001 14.37 15.9301 14.25C16.1601 14.11 16.3901 14.04 16.6401 14.04C16.8301 14.04 17.0301 14.08 17.2501 14.17C17.4701 14.26 17.7001 14.39 17.9501 14.56L21.2601 16.91C21.5201 17.09 21.7001 17.3 21.8101 17.55C21.9101 17.8 21.9701 18.05 21.9701 18.33Z"
+              fill="#737373" />
+          </svg>
+          <span class="nav__link-span">Телефония</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9 2C6.38 2 4.25 4.13 4.25 6.75C4.25 9.32 6.26 11.4 8.88 11.49C8.96 11.48 9.04 11.48 9.1 11.49C9.12 11.49 9.13 11.49 9.15 11.49C9.16 11.49 9.16 11.49 9.17 11.49C11.73 11.4 13.74 9.32 13.75 6.75C13.75 4.13 11.62 2 9 2Z"
+              fill="#737373" />
+            <path
+              d="M14.08 14.15C11.29 12.29 6.73996 12.29 3.92996 14.15C2.65996 15 1.95996 16.15 1.95996 17.38C1.95996 18.61 2.65996 19.75 3.91996 20.59C5.31996 21.53 7.15996 22 8.99996 22C10.84 22 12.68 21.53 14.08 20.59C15.34 19.74 16.04 18.6 16.04 17.36C16.03 16.13 15.34 14.99 14.08 14.15Z"
+              fill="#737373" />
+            <path
+              d="M19.9899 7.33998C20.1499 9.27998 18.7699 10.98 16.8599 11.21C16.8499 11.21 16.8499 11.21 16.8399 11.21H16.8099C16.7499 11.21 16.6899 11.21 16.6399 11.23C15.6699 11.28 14.7799 10.97 14.1099 10.4C15.1399 9.47998 15.7299 8.09998 15.6099 6.59998C15.5399 5.78998 15.2599 5.04998 14.8399 4.41998C15.2199 4.22998 15.6599 4.10998 16.1099 4.06998C18.0699 3.89998 19.8199 5.35998 19.9899 7.33998Z"
+              fill="#737373" />
+            <path
+              d="M21.9902 16.59C21.9102 17.56 21.2902 18.4 20.2502 18.97C19.2502 19.52 17.9902 19.78 16.7402 19.75C17.4602 19.1 17.8802 18.29 17.9602 17.43C18.0602 16.19 17.4702 15 16.2902 14.05C15.6202 13.52 14.8402 13.1 13.9902 12.79C16.2002 12.15 18.9802 12.58 20.6902 13.96C21.6102 14.7 22.0802 15.63 21.9902 16.59Z"
+              fill="#737373" />
+          </svg>
+          <span class="nav__link-span">Арендаторы</span>
+        </a>
+      </li>
+    </ul>
+
+    <a href="#" class="nav__user">
+      <div class="nav__user-img">
+        <img src="./img/user.png" alt="">
+      </div>
+      <p class="nav__user-name">Ирина Малова</p>
+    </a>
+
+  </nav>
+
+  <div class="wrapper" id="wrapper">
+    <main class="main">
+      <section class="dashboard">
+        <div class="container">
+          <div class="dashboard__main">
+            <div class="dashboard__stats">
+              <div class="dashboard__banner">
+                <img src="./img/cup.svg" alt="cup" class="dashboard__banner-img">
+                <p class="dashboard__banner-text">Не бойтесь неудач, не участвуя в гонке, вы уже проиграли.</p>
+                <a href="#" class="dashboard__banner-btn"><img src="./img/notification.svg" alt="notification"
+                    class="dashboard__banner-icon"></a>
+              </div>
+              <div class="dashboard__top">
+                <h2 class="title">Статистика эффективности</h2>
+                <div class="dashboard__date">
+                  <button class="dashboard__date-btn dashboard__date-btn--active">
+                    день
+                    <span class="dashboard__date-decor"></span>
+                  </button>
+                  <button class="dashboard__date-btn">
+                    неделя
+                    <span class="dashboard__date-decor"></span>
+                  </button>
+                  <div class="dashboard__date-selects">
+                    <button class="dashboard__date-select">
+                      <span>21.07</span>
+                      <img class="dashboard__date-select-icon" src="img/select-chevron.svg" alt="">
+                    </button>
+                    <img src="img/arrow.svg" alt="" class="dashboard__date-icon">
+                    <button class="dashboard__date-select">
+                      <span>21.07</span>
+                      <img class="dashboard__date-select-icon" src="img/select-chevron.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard__cards">
+                <div class="dashboard__card dashboard__card--modified">
+                  <div class="dashboard__card-top">
+                    <img src="img/phone.svg" alt="phone" class="dashboard__card-icon">
+                    <h3 class="dashboard__card-title">Звонки</h3>
+                  </div>
+                  <div class="dashboard__card-items">
+                    <div class="dashboard__card-item">
+                      <p class="dashboard__card-item-text">Сегодня</p>
+                      <p class="dashboard__card-item-value">92 / 200</p>
+                    </div>
+                    <div class="dashboard__card-item">
+                      <p class="dashboard__card-item-text">Неделя</p>
+                      <p class="dashboard__card-item-value">92 / 1000</p>
+                    </div>
+                    <div class="dashboard__card-item">
+                      <p class="dashboard__card-item-text">Месяц</p>
+                      <p class="dashboard__card-item-value">92 / 4500</p>
+                    </div>
+                  </div>
+                  <img src="img/clock-decor.svg" alt="" class="dashboard__card-decor">
+                </div>
+                <div class="dashboard__card">
+                  <div class="dashboard__card-top">
+                    <img src="img/clipboard.svg" alt="phone" class="dashboard__card-icon">
+                    <h3 class="dashboard__card-title">Сделки</h3>
+                  </div>
+                  <div class="dashboard__card-main">
+                    <div class="dashboard__card-deals">
+                      <ul class="dashboard__card-deals-list">
+                        <li class="dashboard__card-deals-item">
+                          <span class="dashboard__card-deals-decor dashboard__card-deals-decor--success"></span>
+                          <span>Успешные</span>
+                        </li>
+                        <li class="dashboard__card-deals-item">
+                          <span class="dashboard__card-deals-decor dashboard__card-deals-decor--fail"></span>
+                          <span>Не успешные</span>
+                        </li>
+                      </ul>
+                      <div class="dashboard__card-deals-chart">
+                        <span class="dashboard__card-deals-line dashboard__card-deals-line--success"></span>
+                        <span class="dashboard__card-deals-line dashboard__card-deals-line--fail"></span>
+                      </div>
+                    </div>
+                    <button class="dashboard__card-btn">
+                      <img src="img/maximize.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+                <div class="dashboard__card">
+                  <div class="dashboard__card-top">
+                    <h3 class="dashboard__card-title">Анализ активности</h3>
+                  </div>
+                </div>
+                <div class="dashboard__card">
+                  <div class="dashboard__card-top">
+                    <img src="img/flash.svg" alt="phone" class="dashboard__card-icon">
+                    <h3 class="dashboard__card-title">Сводка эффективности</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar">
+              <div class="calendar__months">
+                <button class="calendar__months-btn"><img src="img/calendar-decor.svg" alt=""></button>
+                <button class="calendar__month calendar__month--xs">Март</button>
+                <button class="calendar__month calendar__month--sm">Апрель</button>
+                <button class="calendar__month calendar__month--base">Май</button>
+                <button class="calendar__month calendar__month--lg">Июнь</button>
+                <button class="calendar__month">Июль</button>
+              </div>
+              <div class="calendar__weekdays">
+                <div class="calendar__weekday">Пн</div>
+                <div class="calendar__weekday">Вт</div>
+                <div class="calendar__weekday">Ср</div>
+                <div class="calendar__weekday">Чт</div>
+                <div class="calendar__weekday">Пт</div>
+                <div class="calendar__weekday">Сб</div>
+                <div class="calendar__weekday">Вс</div>
+              </div>
+              <div class="calendar__days">
+                <div class="calendar__day">1</div>
+                <div class="calendar__day">2</div>
+                <div class="calendar__day">3</div>
+                <div class="calendar__day">4</div>
+                <div class="calendar__day">5</div>
+                <div class="calendar__day">6</div>
+                <div class="calendar__day">7</div>
+                <div class="calendar__day">8</div>
+                <div class="calendar__day">9</div>
+                <div class="calendar__day">10</div>
+                <div class="calendar__day">11</div>
+                <div class="calendar__day">12</div>
+                <div class="calendar__day">13</div>
+                <div class="calendar__day">14</div>
+                <div class="calendar__day">15</div>
+                <div class="calendar__day">16</div>
+                <div class="calendar__day">17</div>
+                <div class="calendar__day">18</div>
+                <div class="calendar__day">19</div>
+                <div class="calendar__day">20</div>
+                <div class="calendar__day">21</div>
+                <div class="calendar__day">22</div>
+                <div class="calendar__day">23</div>
+                <div class="calendar__day">24</div>
+                <div class="calendar__day">25</div>
+                <div class="calendar__day">26</div>
+                <div class="calendar__day calendar__day--active">27</div>
+                <div class="calendar__day">28</div>
+                <div class="calendar__day">29</div>
+                <div class="calendar__day">30</div>
+                <div class="calendar__day">31</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="container info__container">
+          <h2 class="info__title title">Полезная информация</h2>
+          <div class="swiper info__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide info__slider-slide">
+                <div class="info__card">
+                  <div class="info__card-top">
+                    <h3 class="info__card-title">Мастерство переговоров</h3>
+                    <div class="info__card-status">
+                      <p class="info__card-status-text">10 минут</p>
+                      <img src="img/tick-decor.svg" alt="" class="info__card-status-icon">
+                    </div>
+                  </div>
+                  <div class="info__card-main">
+                    <p class="info__card-text">Эффективные стратегии и техники для успешных переговоров и достижения оптимальных условий сделок.</p>
+                    <div class="info__card-img-box">
+                      <img src="img/gears.png" alt="" class="info__card-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide info__slider-slide">
+                <div class="info__card info__card--dark">
+                  <div class="info__card-top">
+                    <h3 class="info__card-title">Психология продаж</h3>
+                    <div class="info__card-status">
+                      <p class="info__card-status-text">10 минут</p>
+                      <img src="img/tick-decor.svg" alt="" class="info__card-status-icon">
+                    </div>
+                  </div>
+                  <div class="info__card-main">
+                    <p class="info__card-text">Обзор психологических аспектов влияющих на решения клиентов и адаптация коммуникации.</p>
+                    <div class="info__card-img-box">
+                      <img src="img/letter.png" alt="" class="info__card-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide info__slider-slide">
+                <div class="info__card">
+                  <div class="info__card-top">
+                    <h3 class="info__card-title">Инструменты и методы</h3>
+                    <div class="info__card-status">
+                      <p class="info__card-status-text">10 минут</p>
+                      <img src="img/tick-decor.svg" alt="" class="info__card-status-icon">
+                    </div>
+                  </div>
+                  <div class="info__card-main">
+                    <p class="info__card-text">Руководство по анализу рыночных тенденций и определению стоимости объектов.</p>
+                    <div class="info__card-img-box">
+                      <img src="img/monitor.png" alt="" class="info__card-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide info__slider-slide">
+                <div class="info__card info__card--dark">
+                  <div class="info__card-top">
+                    <h3 class="info__card-title">Секреты сервиса</h3>
+                    <div class="info__card-status">
+                      <p class="info__card-status-text">10 минут</p>
+                      <img src="img/tick-decor.svg" alt="" class="info__card-status-icon">
+                    </div>
+                  </div>
+                  <div class="info__card-main">
+                    <p class="info__card-text">Методы предоставления высококачественного сервиса для удержания клиентов.</p>
+                    <div class="info__card-img-box">
+                      <img src="img/calendar.png" alt="" class="info__card-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="container news__container">
+          <h2 class="news__title title">Новости</h2>
+          <div class="swiper news__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide news__slider-slide">
+                <div class="news__card"></div>
+              </div>
+              <div class="swiper-slide news__slider-slide">
+                <div class="news__card"></div>
+              </div>
+              <div class="swiper-slide news__slider-slide">
+                <div class="news__card"></div>
+              </div>
+              <div class="swiper-slide news__slider-slide">
+                <div class="news__card"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
